@@ -1,3 +1,12 @@
+<p align="center">
+    <a href="https://cocoapods.org/pods/Files">
+        <img src="https://img.shields.io/cocoapods/v/StoryboardInstantiable.svg" alt="CocoaPods" />
+    </a>
+    <a href="https://github.com/Carthage/Carthage">
+        <img src="https://img.shields.io/badge/carthage-compatible-4BC51D.svg?style=flat" alt="Carthage" />
+    </a>
+</p>
+
 ## Example
 
 Conform to StoryboardInstantiable
