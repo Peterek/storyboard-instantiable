@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
 
   spec.platform = :ios, "8.0"
   spec.requires_arc = true
-  spec.source = { git: "https://github.com/Peterek/storyboard-instantiable.git", tag: "{spec.version}", submodules: true }
+  spec.source = { git: "https://github.com/Peterek/storyboard-instantiable.git", tag: spec.version.to_s, submodules: true }
   spec.source_files = "Sources/**/*"
 
   spec.frameworks = "UIKit"
