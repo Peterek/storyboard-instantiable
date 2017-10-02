@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A09E2201F658B7600D7CDEB /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A09E21F1F658B7600D7CDEB /* StoryboardInstantiable.swift */; };
+		D3468BCB1F816F4D00F1E777 /* StoryboardViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3468BCA1F816F4D00F1E777 /* StoryboardViewFactory.swift */; };
+		D3468BCD1F816F7A00F1E777 /* XibViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3468BCC1F816F7A00F1E777 /* XibViewFactory.swift */; };
+		D3468BCE1F816FD900F1E777 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3468BC91F816F3F00F1E777 /* ViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A09E2121F658A3100D7CDEB /* StoryboardInstantiable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StoryboardInstantiable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A09E2161F658A3100D7CDEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A09E21F1F658B7600D7CDEB /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		D3468BBD1F8151C000F1E777 /* ViewControllerInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInstantiable.swift; sourceTree = "<group>"; };
+		D3468BC91F816F3F00F1E777 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		D3468BCA1F816F4D00F1E777 /* StoryboardViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewFactory.swift; sourceTree = "<group>"; };
+		D3468BCC1F816F7A00F1E777 /* XibViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +60,28 @@
 		5A09E21E1F658B1900D7CDEB /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				5A09E21F1F658B7600D7CDEB /* StoryboardInstantiable.swift */,
+				D3468BC81F816F2D00F1E777 /* ViewFactory */,
+				D3468BBC1F8151C000F1E777 /* Protocols */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		D3468BBC1F8151C000F1E777 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D3468BBD1F8151C000F1E777 /* ViewControllerInstantiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D3468BC81F816F2D00F1E777 /* ViewFactory */ = {
+			isa = PBXGroup;
+			children = (
+				D3468BC91F816F3F00F1E777 /* ViewFactory.swift */,
+				D3468BCA1F816F4D00F1E777 /* StoryboardViewFactory.swift */,
+				D3468BCC1F816F7A00F1E777 /* XibViewFactory.swift */,
+			);
+			path = ViewFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +121,7 @@
 		5A09E2091F658A3100D7CDEB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Piotr Więcaszek";
 				TargetAttributes = {
@@ -113,6 +138,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 5A09E2081F658A3100D7CDEB;
 			productRefGroup = 5A09E2131F658A3100D7CDEB /* Products */;
@@ -139,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A09E2201F658B7600D7CDEB /* StoryboardInstantiable.swift in Sources */,
+				D3468BCB1F816F4D00F1E777 /* StoryboardViewFactory.swift in Sources */,
+				D3468BCD1F816F7A00F1E777 /* XibViewFactory.swift in Sources */,
+				D3468BCE1F816FD900F1E777 /* ViewFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
